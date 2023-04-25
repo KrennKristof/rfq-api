@@ -14,8 +14,8 @@ paths:
     post:
       tags:
         - Quote
-      description: Request a quoute
-      operationid: getQuote
+      description: Create a quoute
+      operationid: createQuote
       requestBody:
         content:
           application/json:
