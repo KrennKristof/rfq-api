@@ -1,12 +1,21 @@
 openapi: '3.0.2'
 info:
+  contact:
+    email: kristof.krenn@smaxtec.com
+  description: Get a quota online
   title: Quotation API
   version: '1.0'
 servers:
   - url: https://api.server.test/v1
+tags:
+  - name: Quote
 paths:
   /rfqs:
     post:
+      tags:
+        - Quote
+      description: Request a quoute
+      operationid: getQuote
       requestBody:
         content:
           application/json:
